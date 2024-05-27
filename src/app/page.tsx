@@ -9,6 +9,8 @@ import Business from "@/components/Business";
 import Hero3 from "@/components/Hero3";
 import Cardmain from "@/components/Cardmain";
 import Faq from "@/components/Faq";
+import Impact from "@/components/Impact";
+
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
     <Hero3/>
     <Cardmain/>
     <Faq/>
+    <Impact/>
 
     {/* <Herom/> */}
     </>
