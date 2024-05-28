@@ -10,6 +10,8 @@ import Hero3 from "@/components/Hero3";
 import Cardmain from "@/components/Cardmain";
 import Faq from "@/components/Faq";
 import Impact from "@/components/Impact";
+import Footer from "@/components/Footer";
+import Star from "@/components/Star";
 
 
 export default function Home() {
@@ -24,8 +26,11 @@ export default function Home() {
     <Business/>
     <Hero3/>
     <Cardmain/>
+    <Star/>
     <Faq/>
     <Impact/>
+    
+    <Footer/>
 
     {/* <Herom/> */}
     </>
