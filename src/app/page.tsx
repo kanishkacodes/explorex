@@ -12,6 +12,7 @@ import Faq from "@/components/Faq";
 import Impact from "@/components/Impact";
 import Footer from "@/components/Footer";
 import Star from "@/components/Star";
+import Founder from "@/components/Founder";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
     <Business/>
     <Hero3/>
     <Cardmain/>
+    <Founder/>
     <Star/>
     <Faq/>
     <Impact/>

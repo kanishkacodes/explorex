@@ -73,7 +73,7 @@ export const CardCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-white py-6 h-auto md:h-[20rem]">
+    <div className="relative overflow-hidden  py-6 h-auto  bg-white md:h-[25rem] ">
       <motion.div
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
@@ -102,8 +102,8 @@ const Cards = ({ cardIndex }: { cardIndex: number }) => (
         transition={SPRING_OPTIONS}
         className="aspect-video w-screen shrink-0 flex justify-center items-center px-4"
       >
-        <div className="max-w-4xl w-full mx-auto p-8 bg-gray-200 mb-6 rounded-md shadow-md">
-          <div className="md:flex">
+        <div className="max-w-7xl w-full mx-auto p-8 bg-gray-100 pt-14 pb-14 mb-10 md:mt-3 flex justify-center rounded-md shadow-md">
+          <div className="md:flex md:space-x-10">
             <div className="md:flex-shrink-0 text-center ">
                 <div className=" flex justify-center">
               <Image className="rounded-full" src={card.srcImage2} alt="Profile Picture" width={100} height={100} />
@@ -120,7 +120,7 @@ const Cards = ({ cardIndex }: { cardIndex: number }) => (
                   <Image key={index} src={card.srcImage1} alt="Star" width={20} height={20} />
                 ))}
               </div>
-              <p className="text-black">{card.bigParagraph}</p>
+              <p className="text-black tracking-wide md:text-xl ">{card.bigParagraph}</p>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ const Dots = ({
       <button
         key={idx}
         onClick={() => setCardIndex(idx)}
-        className={`h-3 w-3 rounded-full transition-colors ${idx === cardIndex ? "bg-blue-500" : "bg-blue-100"}`}
+        className={`h-3 w-3 rounded-full transition-colors ${idx === cardIndex ? "bg-blue-600" : "bg-blue-200"}`}
       />
     ))}
   </div>

@@ -20,7 +20,7 @@ function Hero2() {
   }, [controls, inView]);
 
   return (
-    <div className="ml-5 mr-5 md:ml-72 md:mr-72">
+    <div className="ml-5 mr-5 md:mt-80 md:ml-72 md:mr-72">
       <div className="mt-10">
         <motion.h1
           initial="hidden"
