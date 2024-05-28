@@ -2,7 +2,6 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import Workedwith from "@/components/Workedwith";
 import Hero2 from "@/components/Hero2";
-import Herom from "@/components/Herom";
 import Design from "@/components/Design";
 import Technology from "@/components/Technology";
 import Business from "@/components/Business";
@@ -14,27 +13,22 @@ import Footer from "@/components/Footer";
 import Star from "@/components/Star";
 import Founder from "@/components/Founder";
 
-
 export default function Home() {
   return (
     <>
-    <Hero />
-    <Workedwith />
-    <Hero2/>
-    <Design/>
-    <Technology
-    />
-    <Business/>
-    <Hero3/>
-    <Cardmain/>
-    <Founder/>
-    <Star/>
-    <Faq/>
-    <Impact/>
-    
-    <Footer/>
-
-    {/* <Herom/> */}
+      <Hero />
+      <Workedwith/>
+      <Hero2 />
+      <Design />
+      <Technology />
+      <Business />
+      <Hero3 />
+      <Cardmain />
+      <Founder />
+      <Star />
+      <Faq />
+      <Impact />
+      <Footer />
     </>
   );
 }
