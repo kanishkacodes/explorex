@@ -74,7 +74,7 @@ function Founder() {
                 alt="pfp"
                 width={6220}
                 height={6220}
-                className="rounded-full w-5/5"
+                className="rounded-full w-full"
                 
               />
             
