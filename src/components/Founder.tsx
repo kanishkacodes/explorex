@@ -68,7 +68,7 @@ function Founder() {
             </div>
           </div>
 
-          <div className="w-96 flex items-center justify-center" >
+          <div className=" flex items-center justify-center" >
           <Image
                 src="/pfp1.jpg"
                 alt="pfp"
