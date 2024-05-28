@@ -8,7 +8,7 @@ function Founder() {
   return (
     <div>
       <div className="border border-black  md:mr-64 md:ml-64 mr-5 ml-5 mt-10 mb-10 p-10 ">
-        <div className=" flex md:flex-row flex-col md:items-center space-x-0 md:space-x-16">
+        <div className=" flex md:flex-row flex-col md:items-center space-x-0 md:space-x-2 ">
           <div className=" flex flex-col   ">
             <h1 className="font-bold md:text-7xl tracking-wide text-5xl text-black">Meet</h1>
             <h1 className="font-bold md:text-7xl tracking-wide text-5xl text-black">The</h1>
