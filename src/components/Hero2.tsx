@@ -39,7 +39,7 @@ function Hero2() {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
           >
             <LottieAnimation animationPath="/Assets/Animation.json" />
           </motion.div>
