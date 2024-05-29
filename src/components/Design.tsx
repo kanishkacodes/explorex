@@ -66,8 +66,9 @@ function Design() {
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.4 }}
+          className=" md:w-1/3"
         >
-          <LottieAnimation animationPath="/Assets/business.json" />
+          <LottieAnimation animationPath="/Assets/Design.json" />
         </motion.div>
       </div>
     </div>
