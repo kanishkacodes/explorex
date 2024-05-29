@@ -23,9 +23,10 @@ export default function Home() {
       <Technology />
       <Business />
       <Hero3 />
-      <Cardmain />
-      <Founder />
       <Star />
+      <Cardmain />
+      {/* <Founder /> */}
+      
       <Faq />
       <Impact />
       <Footer />
