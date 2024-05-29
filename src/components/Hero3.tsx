@@ -22,7 +22,7 @@ function Hero3() {
   }, [controls, inView]);
 
   return (
-    <div className="ml-5 mr-5 md:ml-72 md:mr-72 mb-40">
+    <div className="ml-5 mr-5 md:ml-72 md:mr-72 ">
       <div className="mt-10"  ref={ref}>
         <motion.h1
           initial="hidden"

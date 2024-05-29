@@ -73,7 +73,7 @@ export const CardCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden  py-6 h-auto  bg-white md:h-[25rem] ">
+    <div className="relative overflow-hidden  py-6 h-auto  bg-white  ">
       <motion.div
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
