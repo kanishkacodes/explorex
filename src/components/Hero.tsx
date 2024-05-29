@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           className="mr-0 md:mr-9"
         >
-          <LottieAnimation animationPath="/Assets/business.json" />
+          <LottieAnimation animationPath="/Assets/OnlineChat.json" />
         </motion.div>
         <motion.div
           ref={ref}

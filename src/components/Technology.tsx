@@ -67,7 +67,7 @@ function Technology() {
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <LottieAnimation animationPath="/Assets/business.json" />
+          <LottieAnimation animationPath="/Assets/Coding.json" />
         </motion.div>
       </div>
     </div>
