@@ -10,7 +10,7 @@ const textVariants = {
 };
 
 // Minimized delays while maintaining proportional differences
-const delays = [0.4, 0.6, 0.8, 1.0, 1.2, 1.4];
+const delays = [0.2, 0.3, 0.4, 0.6, 0.9, 1.0];
 
 function Design() {
   const controls = useAnimation();
@@ -39,7 +39,7 @@ function Design() {
               initial="hidden"
               animate={controls}
               variants={textVariants}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className="ml-10 font-bold tracking-wide text-5xl md:text-7xl text-black"
             >
               Design
@@ -65,7 +65,7 @@ function Design() {
           initial="hidden"
           animate={controls}
           variants={textVariants}
-          transition={{ duration: 0.5, delay: 1.6 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
           <LottieAnimation animationPath="/Assets/business.json" />
         </motion.div>
