@@ -9,12 +9,11 @@ const textVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-// Minimized delays while maintaining proportional differences
-const delays = [0.2, 0.3, 0.4, 0.6, 0.9, 1.0];
+const delays = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7];
 
 function Design() {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   useEffect(() => {
     if (inView) {
@@ -23,8 +22,8 @@ function Design() {
   }, [controls, inView]);
 
   return (
-    <div className=" ">
-      <div className="md:flex justify-center  md:space-x-40  mt-20 md:mt-28">
+    <div className="">
+      <div className="md:flex justify-center md:space-x-40 mt-20 md:mt-28">
         <div className="flex justify-center mr-20 md:mr-0" ref={ref}>
           <motion.main
             initial="hidden"
@@ -66,7 +65,7 @@ function Design() {
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className=" md:w-1/3"
+          className="md:w-1/3"
         >
           <LottieAnimation animationPath="/Assets/Design.json" />
         </motion.div>

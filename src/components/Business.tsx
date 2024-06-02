@@ -9,12 +9,11 @@ const textVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-// Minimized delays while maintaining proportional differences
-const delays = [0.2, 0.3, 0.4, 0.6, 0.9, 1.0];
+const delays = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7];
 
 function Business() {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   useEffect(() => {
     if (inView) {
@@ -25,7 +24,7 @@ function Business() {
   return (
     <div className="ml-3 md:ml-0">
       <div className="md:flex justify-center md:space-x-20 mt-20 md:mt-28">
-        <div className="flex justify-center  mr-16 md:mr-0" ref={ref}>
+        <div className="flex justify-center mr-16 md:mr-0" ref={ref}>
           <motion.main
             initial="hidden"
             animate={controls}

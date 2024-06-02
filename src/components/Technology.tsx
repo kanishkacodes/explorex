@@ -9,12 +9,11 @@ const textVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-// Minimized delays while maintaining proportional differences
-const delays = [0.2, 0.3, 0.4, 0.6, 0.9, 1.0];
+const delays = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7];
 
 function Technology() {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   useEffect(() => {
     if (inView) {
