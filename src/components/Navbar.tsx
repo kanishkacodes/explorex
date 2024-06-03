@@ -46,7 +46,7 @@ function Navbar() {
               </li>
             </Link>
 
-            <Link href="/">
+            <Link href="/https://share.hsforms.com/1zBadTPyLTVu585sGj-a5TQcyk5y">
               <li className="ml-20 text-lg">
                 <button className="bg-black text-white px-8 py-4 rounded-lg hover:text-pink-500 hover:bg-white hover:shadow-sm hover:shadow-slate-600">
                   Contact Us
@@ -113,7 +113,7 @@ function Navbar() {
                 Clients
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/https://share.hsforms.com/1zBadTPyLTVu585sGj-a5TQcyk5y">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer hover:border-b text-lg hover:text-pink-500"
