@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="sticky z-50 w-full h-24  border-b-2 border-neutral-400 bg-white top-0">
+    <nav className="sticky z-50 w-full h-20  border-b-2 border-neutral-400 bg-white top-0 ">
       <div className="flex justify-between items-center h-full w-full px-6 2xl:px-16">
         <div>
           <div className="w-40 md:w-60">
