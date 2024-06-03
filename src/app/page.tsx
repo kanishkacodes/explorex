@@ -12,10 +12,12 @@ import Impact from "@/components/Impact";
 import Footer from "@/components/Footer";
 import Star from "@/components/Star";
 import Founder from "@/components/Founder";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
+      <Navbar />
       <Hero />
       <Workedwith/>
       <Hero2 />
