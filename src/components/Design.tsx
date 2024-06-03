@@ -22,7 +22,7 @@ function Design() {
   }, [controls, inView]);
 
   return (
-    <div className="" id="Services">
+    <div className="" >
       <div className="md:flex justify-center md:space-x-40 mt-20 md:mt-28">
         <div className="flex justify-center mr-20 md:mr-0" ref={ref}>
           <motion.main

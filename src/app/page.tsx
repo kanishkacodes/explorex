@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 import Star from "@/components/Star";
 import Founder from "@/components/Founder";
 import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -21,9 +22,10 @@ export default function Home() {
       <Hero />
       <Workedwith/>
       <Hero2 />
-      <Design />
+      <Services />
+      {/* <Design />
       <Technology />
-      <Business />
+      <Business /> */}
       <Hero3 />
       <Star />
       <Cardmain />
