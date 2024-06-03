@@ -34,7 +34,7 @@ function Navbar() {
               </li>
             </Link>
 
-            <Link href="#Services">
+            <Link href="/Services">
               <li className="ml-14 hover:border-b text-xl hover:text-pink-500">
                 Services
               </li>
@@ -97,7 +97,7 @@ function Navbar() {
                 About
               </li>
             </Link>
-            <Link href="#Services">
+            <Link href="/Services">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer hover:border-b text-xl hover:text-pink-500"
