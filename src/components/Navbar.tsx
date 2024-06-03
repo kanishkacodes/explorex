@@ -47,7 +47,7 @@ function Navbar() {
             </Link>
 
             <Link href="/">
-              <li className="ml-20 text-xl">
+              <li className="ml-20 text-lg">
                 <button className="bg-black text-white px-8 py-4 rounded-lg hover:text-pink-500 hover:bg-white hover:shadow-sm hover:shadow-slate-600">
                   Contact Us
                 </button>
@@ -62,8 +62,8 @@ function Navbar() {
       <div
         className={
           menuOpen
-            ? "fixed right-0 z-50 top-0 w-[100%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500 flex justify-center items-center"
-            : "fixed right-[-100%] z-50 w-[100%] top-0 p-10 ease-in duration-500 flex justify-center items-center"
+            ? "fixed right-0 z-50 top-0 w-[100%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-200 flex justify-center items-center"
+            : "fixed right-[-100%] z-50 w-[100%] top-0 p-10  ease-out duration-200 flex justify-center items-center"
         }
       >
         <div className="absolute top-10 right-10">
