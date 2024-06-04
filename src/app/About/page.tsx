@@ -25,14 +25,14 @@ const Page: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="px-4">
+      <div className="px-4 h-[50rem] mt-14">
         <div className="flex flex-col items-center">
           <motion.div
             ref={ref}
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.5, delay: 0.25 }}
+            transition={{ duration: 0.0, delay: 0.0 }}
             className="md:w-1/5"
           >
             <LottieAnimation animationPath="/Assets/About.json" />
@@ -43,8 +43,8 @@ const Page: React.FC = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-center md:w-3/5"
+            transition={{ duration: 0.5, delay: 1.0 }}
+            className="text-center  md:w-3/5"
           >
             <div className="font-bold tracking-wide text-3xl md:text-6xl text-black md:mb-8 mb-4">
               About Us
@@ -56,8 +56,8 @@ const Page: React.FC = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.5, delay: 0.75 }}
-            className="text-lg md:text-2xl tracking-wide text-neutral-600 mb-10 font-medium md:w-3/5"
+            transition={{ duration: 0.5, delay: 1.5 }}
+            className="text-lg md:text-2xl tracking-wide text-neutral-600  font-medium md:w-3/5"
           >
             Thinkfluence is a premier bespoke consultancy firm focusing only
             in the Hospitality domain. We are an extension of Explorex, which
