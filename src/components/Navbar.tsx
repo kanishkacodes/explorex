@@ -62,7 +62,7 @@ function Navbar() {
       <div
         className={
           menuOpen
-            ? "fixed right-0 z-50 top-0 w-[100%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-350 flex justify-center items-center"
+            ? "fixed right-0 z-50 top-0 w-[100%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500 flex justify-center items-center"
             : "fixed right-[-100%] z-50 w-[100%] top-0 p-10  ease-out duration-200 flex justify-center items-center"
         }
       >

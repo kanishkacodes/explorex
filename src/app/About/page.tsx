@@ -12,7 +12,7 @@ const textVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const Page: React.FC = () => {
+const Hero: React.FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -32,7 +32,7 @@ const Page: React.FC = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.0, delay: 0.0 }}
+            transition={{ duration: 0.5, delay: 0.0 }}
             className="md:w-1/5"
           >
             <LottieAnimation animationPath="/Assets/About.json" />
@@ -43,7 +43,7 @@ const Page: React.FC = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.5, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 1.25 }}
             className="text-center  md:w-3/5"
           >
             <div className="font-bold tracking-wide text-3xl md:text-6xl text-black md:mb-8 mb-4">
@@ -76,4 +76,4 @@ const Page: React.FC = () => {
   );
 };
 
-export default Page;
+export default Hero;
