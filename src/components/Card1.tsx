@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Image from 'next/legacy/image'
 
 function Card1() {
