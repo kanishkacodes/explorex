@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className=" py-12">
+    <footer className=" border-t-2 py-12">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-12 lg:space-y-0">
         {/* Logo and Address Section */}
         <div className="flex flex-col md:w-1/3 space-y-6">
