@@ -42,7 +42,7 @@ const Workedwith: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col h-[25rem]  md:h-[30rem] items-center justify-center mt-20">
+      <div className="flex flex-col h-[25rem]  md:h-[35rem] items-center justify-center mt-20">
         <motion.div
           ref={ref}
           initial="hidden"
