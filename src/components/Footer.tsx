@@ -23,8 +23,8 @@ function Footer() {
               <Image
                 src="/f.png"
                 alt="Facebook"
-                width={28}
-                height={28}
+                width={20}
+                height={20}
                 className="hover:opacity-75"
               />
             </Link>
@@ -32,8 +32,8 @@ function Footer() {
               <Image
                 src="/i.png"
                 alt="Instagram"
-                width={28}
-                height={28}
+                width={20}
+                height={20}
                 className="hover:opacity-75"
               />
             </Link>
