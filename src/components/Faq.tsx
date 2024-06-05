@@ -41,7 +41,7 @@ function Faq() {
 
         <div className="flex-1 p-4 md:p-8">
           <Image
-            src="/faq.png"
+            src="/faq1.png"
             width={773}
             height={826}
             alt="faq"
