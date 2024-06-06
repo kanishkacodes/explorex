@@ -1,15 +1,17 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import LottieAnimation from "@/components/LottieAnimation";
+import dynamic from "next/dynamic";
 import { useInView } from "react-intersection-observer";
+
+const LottieAnimation = dynamic(() => import("@/components/LottieAnimation"), { ssr: false });
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },
 };
 
-const delays = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7];
+const delays = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6];
 
 function Design() {
   const controls = useAnimation();
@@ -22,14 +24,14 @@ function Design() {
   }, [controls, inView]);
 
   return (
-    <div className="" >
+    <div className="">
       <div className="md:flex justify-center md:space-x-40 mt-20 md:mt-28">
         <div className="flex justify-center mr-20 md:mr-0" ref={ref}>
           <motion.main
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="md:w-16 md:h-16 w-12 h-12 rounded-full bg-red-500"
           ></motion.main>
 
@@ -38,7 +40,7 @@ function Design() {
               initial="hidden"
               animate={controls}
               variants={textVariants}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="ml-10 font-bold tracking-wide text-5xl md:text-7xl text-black"
             >
               Design
@@ -50,7 +52,7 @@ function Design() {
                   initial="hidden"
                   animate={controls}
                   variants={textVariants}
-                  transition={{ duration: 0.5, delay: delays[index] }}
+                  transition={{ duration: 0.4, delay: delays[index] }}
                   className="mt-5 mb-5 md:text-2xl text-xl tracking-wide text-black font-medium"
                 >
                   {text}
@@ -64,14 +66,14 @@ function Design() {
           initial="hidden"
           animate={controls}
           variants={textVariants}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
           className="md:w-1/3"
         >
-          <LottieAnimation animationPath="/Assets/Design.json" />
+          {inView && <LottieAnimation animationPath="/Assets/Design.json" />}
         </motion.div>
       </div>
     </div>
   );
 }
 
-export default Design;
+export default React.memo(Design);

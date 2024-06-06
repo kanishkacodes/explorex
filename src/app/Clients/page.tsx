@@ -29,7 +29,6 @@ const Workedwith: React.FC = () => {
     '/client/uptown.png',
     '/client/TBC.png',
     '/client/gourmet.png',
-
   ];
 
   const textVariants = {
@@ -40,20 +39,20 @@ const Workedwith: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col h-[25rem]  md:h-[35rem] items-center justify-center mt-20">
+      <div className="flex flex-col h-[25rem] md:h-[35rem] items-center justify-center mt-20">
         <motion.div
           ref={ref}
           initial="hidden"
           animate={controls}
           variants={textVariants}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="text-center"
         >
           <div className="font-bold tracking-wide text-3xl md:text-6xl text-black mb-10 md:mb-20">
             Our Clients
           </div>
         </motion.div>
-        <div className=" grid grid-cols-3 md:gap-10 justify-center">
+        <div className="grid grid-cols-3 md:gap-10 justify-center">
           {images.map((src, index) => (
             <motion.div
               key={index}
@@ -61,17 +60,23 @@ const Workedwith: React.FC = () => {
               initial="hidden"
               animate={controls}
               variants={imageVariants}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
               className="w-32 md:w-96 mb-5 mx-2"
             >
-              <Image src={src} alt={`Logo ${index + 1}`} width={1800} height={400} />
+              <Image
+                src={src}
+                alt={`Logo ${index + 1}`}
+                width={1800}
+                height={400}
+                loading="lazy"
+              />
             </motion.div>
           ))}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Workedwith;
+export default React.memo(Workedwith);

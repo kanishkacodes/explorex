@@ -1,8 +1,11 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import LottieAnimation from "@/components/LottieAnimation";
+import dynamic from "next/dynamic";
 import { useInView } from "react-intersection-observer";
+
+// Dynamically import the LottieAnimation component
+const LottieAnimation = dynamic(() => import("@/components/LottieAnimation"), { ssr: false });
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -29,7 +32,7 @@ function Business() {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="md:w-16 md:h-16 w-12 h-12 rounded-full bg-purple-500 flex justify-end"
           ></motion.main>
 
@@ -38,7 +41,7 @@ function Business() {
               initial="hidden"
               animate={controls}
               variants={textVariants}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="ml-10 font-bold text-5xl md:text-7xl text-black"
             >
               Business
@@ -50,7 +53,7 @@ function Business() {
                   initial="hidden"
                   animate={controls}
                   variants={textVariants}
-                  transition={{ duration: 0.5, delay: delays[index] }}
+                  transition={{ duration: 0.4, delay: delays[index] }}
                   className="mt-5 mb-5 md:text-2xl text-xl tracking-wide text-black font-medium"
                 >
                   {text}
@@ -64,13 +67,13 @@ function Business() {
           initial="hidden"
           animate={controls}
           variants={textVariants}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
-          <LottieAnimation animationPath="/Assets/business.json" />
+          {inView && <LottieAnimation animationPath="/Assets/business.json" />}
         </motion.div>
       </div>
     </div>
   );
 }
 
-export default Business;
+export default React.memo(Business);
