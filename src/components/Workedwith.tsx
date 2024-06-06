@@ -39,7 +39,7 @@ const Workedwith: React.FC = () => {
             animate={controls}
             variants={imageVariants}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="w-24  md:w-32  mb-5"
+            className="w-40  md:w-80  mb-5"
           >
             <Image src={src} alt={`Logo ${index + 1}`} width={1800} height={400} />
           </motion.div>

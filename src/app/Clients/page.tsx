@@ -22,16 +22,14 @@ const Workedwith: React.FC = () => {
   }, [controls, inView]);
 
   const images = [
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
+    '/client/explorex.png',
+    '/client/sathyas.png',
+    '/client/parika.png',
+    '/client/kudla.png',
+    '/client/uptown.png',
+    '/client/TBC.png',
+    '/client/gourmet.png',
+
   ];
 
   const textVariants = {
@@ -64,7 +62,7 @@ const Workedwith: React.FC = () => {
               animate={controls}
               variants={imageVariants}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="w-24 md:w-32 mb-5 mx-2"
+              className="w-32 md:w-96 mb-5 mx-2"
             >
               <Image src={src} alt={`Logo ${index + 1}`} width={1800} height={400} />
             </motion.div>
