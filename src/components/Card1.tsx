@@ -19,7 +19,7 @@ function Card1() {
         </div>
         
         <div className="relative flex-grow">
-          <Image src='/mobileb.png' alt='BMW' layout="fill" objectFit="cover" />
+          <Image src='/laptop.png' alt='BMW' layout="fill" objectFit="cover" />
         </div>
       </div>
     </div>
