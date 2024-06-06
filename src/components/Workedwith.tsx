@@ -20,12 +20,12 @@ const Workedwith: React.FC = () => {
   }, [controls, inView]);
 
   const images = [
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
-    '/Sony.png',
+    '/client/explorex.png',
+    '/client/sathyas.png',
+    '/client/parika.png',
+    '/client/kudla.png',
+    '/client/uptown.png',
+    '/client/TBC.png',
   ];
 
   return (
