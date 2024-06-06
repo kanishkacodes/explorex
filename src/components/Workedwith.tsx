@@ -29,7 +29,7 @@ const Workedwith: React.FC = () => {
   ];
 
   return (
-    <div className="mt-10 ml-5 mr-5 md:ml-72 md:mr-72 mb-20">
+    <div className=" mt-7 ml-5 mr-5 md:ml-72 md:mr-72 mb-20">
       <div className="grid grid-cols-3 md:grid-cols-6 gap-x-5 gap-y-0 justify-items-center">
         {images.map((src, index) => (
           <motion.div

@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 
   return (
     <div>
-      <div className="md:flex justify-center space-x-6 mt-10">
+      <div className="md:flex justify-center space-x-6 ">
         <motion.div
           ref={ref}
           initial="hidden"
