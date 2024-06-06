@@ -1,11 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import dynamic from "next/dynamic";
+import LottieAnimation from "@/components/LottieAnimation";
 import { useInView } from "react-intersection-observer";
-
-// Dynamically import the LottieAnimation component
-const LottieAnimation = dynamic(() => import("@/components/LottieAnimation"), { ssr: false });
 
 const textVariants = {
   hidden: { opacity: 0, y: 75 },
@@ -14,7 +11,7 @@ const textVariants = {
 
 const Hero: React.FC = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
     if (inView) {
@@ -30,16 +27,17 @@ const Hero: React.FC = () => {
           initial="hidden"
           animate={controls}
           variants={textVariants}
-          transition={{ duration: 0.4, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
           className="mr-0 md:mr-9"
         >
-          {inView && <LottieAnimation animationPath="/Assets/OnlineChat.json" />}
+          <LottieAnimation animationPath="/Assets/OnlineChat.json" />
         </motion.div>
         <motion.div
+          ref={ref}
           initial="hidden"
           animate={controls}
           variants={textVariants}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           <h1 className="font-bold tracking-wide text-5xl md:text-7xl text-black mt-0 md:mt-28">
             Design
@@ -62,4 +60,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default React.memo(Hero);
+export default Hero;
