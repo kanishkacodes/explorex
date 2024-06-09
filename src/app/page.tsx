@@ -14,6 +14,7 @@ import Star from "@/components/Star";
 import Founder from "@/components/Founder";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import Carda from "@/components/Carda";
 
 export default function Home() {
   return (
@@ -28,10 +29,12 @@ export default function Home() {
       <Business /> */}
       <Hero3 />
       <Star />
+     
       <Cardmain />
       {/* <Founder /> */}
       
       <Faq />
+      
       <Impact />
       <Footer />
     </>
