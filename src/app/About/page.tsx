@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
             of Explorex, which is India&apos;s leading full stack OS which helps in managing your restaurant more efficiently
             thereby helping you generate more revenue. We specialise in Performance Marketing thereby generating more ROl
             on your spend, and helping segment & target more effectively. Parallel we believe in crafting unforgettable
-            experiences and optimising operations for businesses in the world of hospitality.
+            experiences and optimising operations for businesses in the dynamic world of hospitality.
           </p>
         </motion.div>
       </div>
