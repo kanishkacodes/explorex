@@ -46,7 +46,7 @@ function Design() {
               Design
             </motion.h1>
             <div className="ml-14 mt-8 mb-8">
-              {["UI Design", "UX Design", "UX Consultancy", "Design System", "Animation", "Illustrations"].map((text, index) => (
+              {["UX Design", "Video Content", "Design System", "Animation", "Illustrations"].map((text, index) => (
                 <motion.p
                   key={index}
                   initial="hidden"

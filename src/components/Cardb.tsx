@@ -23,9 +23,9 @@ function Cardb() {
           
           </div>
           <div className='  h-3/5 flex items-center justify-center '>
-          <div className=' w-full'>
+          <div className=' w-10/12'>
 
-          <Image src='/700.png' alt='BMW' width={1200} height={1200}/>
+          <Image src='/mobile1200.png' alt='BMW' width={1200} height={1200}/>
           </div>
 
           </div>

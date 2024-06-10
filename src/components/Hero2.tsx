@@ -29,7 +29,7 @@ function Hero2() {
           transition={{ duration: 0.5, delay: 0.25 }}
           className="font-bold md:text-5xl text-3xl text-black"
         >
-          We are a global creative agency that combines design expertise with technology and intelligence.
+          We are a unique creative agency that combines design expertise with technology, data and intelligence.
         </motion.h1>
       </div>
 

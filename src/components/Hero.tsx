@@ -49,10 +49,10 @@ const Hero: React.FC = () => {
             Accelerate
           </h1>
           <p className="text-2xl tracking-wide text-black font-medium mt-5">
-            We Revolutionize User Experience
+          We Revolutionize Customer Experience
           </p>
           <p className="text-2xl tracking-wide text-black font-medium">
-            Using Behavioural Science.
+          Using Technology, Data & Science.
           </p>
         </motion.div>
       </div>

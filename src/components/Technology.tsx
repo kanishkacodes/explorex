@@ -47,7 +47,7 @@ function Technology() {
               Technology
             </motion.h1>
             <div className="ml-14 mt-8 mb-8">
-              {["Web Design", "Softwares", "Mobile Apps", "Web Apps", "Front-End", "Back-End"].map((text, index) => (
+              {["Web Design", "Softwares", "Mobile Apps", "Menu Engineering", "Customer Data-Analysis"].map((text, index) => (
                 <motion.p
                   key={index}
                   initial="hidden"
