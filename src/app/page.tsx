@@ -15,6 +15,9 @@ import Founder from "@/components/Founder";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Carda from "@/components/Carda";
+import B from "@/components/B";
+import T from "@/components/T";
+import D from "@/components/D";
 
 export default function Home() {
   return (
@@ -34,6 +37,9 @@ export default function Home() {
       {/* <Founder /> */}
       
       <Faq />
+      <D/>
+      <T/>
+      <B/>
       
       <Impact />
       <Footer />
