@@ -47,7 +47,7 @@ function Business() {
               Business
             </motion.h1>
             <div className="ml-14 mt-8 mb-8">
-              {["Promotions", "Staff Training", "Social Media Presence", "Voice of Customer", "Customer Sentiment Analysis"].map((text, index) => (
+              {["Promotions", "Staff Training", "Social Media Presence", "Voice of Customer", "Feedback Analysis"].map((text, index) => (
                 <motion.p
                   key={index}
                   initial="hidden"
