@@ -1,10 +1,11 @@
+//Business.tsx
 "use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useInView } from "react-intersection-observer";
 
-// Dynamically import the LottieAnimation component
+
 const LottieAnimation = dynamic(() => import("@/components/LottieAnimation"), { ssr: false });
 
 const textVariants = {

@@ -1,3 +1,4 @@
+//Design.tsx
 "use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
@@ -32,7 +33,7 @@ function Design() {
             animate={controls}
             variants={textVariants}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="md:w-16 md:h-16 w-12 h-12 rounded-full bg-red-500"
+            className="md:w-16 md:h-16 w-12  h-12 rounded-full bg-red-500"
           ></motion.main>
 
           <div>

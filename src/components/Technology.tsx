@@ -1,3 +1,4 @@
+//Technology.tsx
 "use client";
 import React, { useEffect, Suspense } from "react";
 import { motion, useAnimation } from "framer-motion";
