@@ -28,7 +28,7 @@ function Footer() {
                 className="hover:opacity-75"
               />
             </Link>
-            <Link href="https://www.instagram.com/thinkfluence.byexplorex/">
+            <Link href="https://www.instagram.com/thinkfluence_explorex/">
               <Image
                 src="/i.png"
                 alt="Instagram"
@@ -52,7 +52,7 @@ function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="text-center text-xs mt-12">
+      <div className="text-center text-xs mt-10 pt-4 ">
         © 2024 Thinkfluence || All Rights Reserved
       </div>
     </footer>
