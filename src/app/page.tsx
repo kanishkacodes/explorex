@@ -37,9 +37,7 @@ export default function Home() {
       {/* <Founder /> */}
       
       <Faq />
-      <D/>
-      <T/>
-      <B/>
+      
       
       <Impact />
       <Footer />
