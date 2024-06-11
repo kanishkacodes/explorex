@@ -15,7 +15,7 @@ function Cardc() {
           <div className="md:text-2xl text-xl tracking-wide font-medium flex justify-center items-center space-x-2  text-white">
             <p>Feedbacks</p>
             <div className="rounded-full w-1 h-1 bg-white"></div>
-            <p>Staff Training</p>
+            <p>Design</p>
             <div className="rounded-full w-1 h-1 bg-white"></div>
             <p>Promotions</p>
           </div>
