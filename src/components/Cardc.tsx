@@ -25,7 +25,7 @@ function Cardc() {
           <div className='  h-3/5 flex items-center justify-center '>
           <div className=' w-full md:w-10/12'>
 
-          <Image src='/1700.png' alt='BMW' width={1200} height={1200}/>
+          <Image src='/menu1.png' alt='BMW' width={1200} height={1200}/>
           </div>
 
           </div>
