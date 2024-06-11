@@ -23,7 +23,7 @@ function Cardb() {
           
           </div>
           <div className='  h-3/5 flex items-center justify-center '>
-          <div className=' w-full md:w-11/12'>
+          <div className=' w-full md:w-10/12'>
 
           <Image src='/mobile1200.png' alt='BMW' width={1200} height={1200}/>
           </div>
