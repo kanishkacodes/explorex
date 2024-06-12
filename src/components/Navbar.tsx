@@ -21,7 +21,7 @@ function Navbar() {
           </div>
         </div>
         <div>
-          <ul className="hidden md:flex items-center">
+          <ul className="hidden lg:flex items-center">
             <Link href="/">
               <li className="ml-8 lg:ml-14 hover:border-b text-lg lg:text-xl hover:text-pink-500">
                 Home
@@ -43,22 +43,22 @@ function Navbar() {
               </li>
             </Link>
             <Link href="https://share.hsforms.com/1zBadTPyLTVu585sGj-a5TQcyk5y">
-              <li className="ml-12 lg:ml-20 text-lg">
-                <button className="bg-black text-white px-6 py-3 lg:px-8 lg:py-4 rounded-lg hover:text-pink-500 hover:bg-white hover:shadow-sm hover:shadow-slate-600">
+              <li className="ml-12 lg:ml-20 lg:text-lg  text-base  ">
+                <button className="bg-black text-white px-4 py-2 md:px-4 md:py-3 lg:px-8 lg:py-4 rounded-lg hover:text-pink-500 hover:bg-white hover:shadow-sm hover:shadow-slate-600">
                   Contact Us
                 </button>
               </li>
             </Link>
           </ul>
         </div>
-        <div onClick={handleNav} className="md:hidden cursor-pointer pl-24">
+        <div onClick={handleNav} className="lg:hidden cursor-pointer pl-24">
           <AiOutlineMenu size={25} />
         </div>
       </div>
       <div
         className={
           menuOpen
-            ? "fixed right-0 z-50 top-0 w-[100%] md:hidden h-screen bg-[#f7f7f7] p-10 ease-in duration-500 flex justify-center items-center"
+            ? "fixed right-0 z-50 top-0 w-[100%] lg:hidden h-screen bg-[#f7f7f7] p-10 ease-in duration-500 flex justify-center items-center"
             : "fixed right-[-100%] z-50 w-[100%] top-0 p-10 ease-in duration-200 flex justify-center items-center"
         }
       >
