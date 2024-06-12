@@ -21,14 +21,14 @@ const Hero: React.FC = () => {
 
   return (
     <div>
-      <div className="lg:flex justify-center space-x-6 ">
+      <div className="md:flex justify-center space-x-6">
         <motion.div
           ref={ref}
           initial="hidden"
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="mr-0 lg:mr-9"
+          className="mr-0 md:mr-6 lg:mr-9"
         >
           <LottieAnimation animationPath="/Assets/OnlineChat.json" />
         </motion.div>
@@ -39,19 +39,19 @@ const Hero: React.FC = () => {
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <h1 className="font-bold tracking-wide text-5xl lg:text-7xl text-black mt-0 lg:mt-28">
+          <h1 className="font-bold tracking-wide text-5xl md:text-6xl lg:text-7xl text-black mt-0 md:mt-14 lg:mt-28">
             Design
           </h1>
-          <h1 className="font-bold tracking-wide text-5xl lg:text-7xl text-black">
+          <h1 className="font-bold tracking-wide text-5xl md:text-6xl lg:text-7xl text-black">
             Transform
           </h1>
-          <h1 className="font-bold tracking-wide text-5xl lg:text-7xl text-black">
+          <h1 className="font-bold tracking-wide text-5xl md:text-6xl lg:text-7xl text-black">
             Accelerate
           </h1>
-          <p className="text-2xl tracking-wide text-black font-medium mt-5">
+          <p className="text-2xl md:text-3xl tracking-wide text-black font-medium mt-5">
             We Revolutionize Customer Experience
           </p>
-          <p className="text-2xl tracking-wide text-black font-medium">
+          <p className="text-2xl md:text-3xl tracking-wide text-black font-medium">
             Using Technology, Data & Science.
           </p>
         </motion.div>
