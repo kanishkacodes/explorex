@@ -14,7 +14,7 @@ function Navbar() {
     <nav className="sticky z-50 w-full h-20  border-b-2 border-neutral-400 bg-white top-0 ">
       <div className="flex justify-between items-center h-full w-full px-6 2xl:px-16">
         <div>
-          <div className="w-40 md:w-60">
+          <div className="w-40 lg:w-60">
             <Link href="/">
               <Image alt="LOGO" src="/TF.png" width={1351} height={184} />
             </Link>
@@ -55,7 +55,7 @@ function Navbar() {
             </Link>
           </ul>
         </div>
-        <div onClick={handleNav} className="md:hidden cursor-pointer pl-24">
+        <div onClick={handleNav} className="lg:hidden cursor-pointer pl-24">
           <AiOutlineMenu size={25} />
         </div>
       </div>
@@ -63,7 +63,7 @@ function Navbar() {
         className={
           menuOpen
             ? "fixed right-0 z-50 top-0 w-[100%] sm:hidden h-screen bg-[#f7f7f7] p-10 ease-in duration-500 flex justify-center items-center"
-            : "fixed right-[-100%] z-50 w-[100%] top-0 p-10  ease-out duration-200 flex justify-center items-center"
+            : "fixed right-[-100%] z-50 w-[100%] top-0 p-10   ease-in duration-200 flex justify-center items-center"
         }
       >
         <div className="absolute top-10 right-10">
