@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="mr-0 md:mr-6 lg:mr-9"
+          className="mr-0 md:mr-6 lg:mr-9 flex lg:justify-start justify-center"
         >
           <LottieAnimation animationPath="/Assets/OnlineChat.json" />
         </motion.div>
@@ -38,6 +38,7 @@ const Hero: React.FC = () => {
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.5 }}
+          
         >
           <h1 className="font-bold tracking-wide text-5xl md:text-6xl lg:text-7xl text-black mt-0 md:mt-14 lg:mt-28">
             Design

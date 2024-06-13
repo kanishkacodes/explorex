@@ -40,6 +40,7 @@ function Hero2() {
             animate={controls}
             variants={textVariants}
             transition={{ duration: 0.5, delay: 0.25 }}
+            className="w-full md:w-1/2"
           >
             <LottieAnimation animationPath="/Assets/Animation.json" />
           </motion.div>
