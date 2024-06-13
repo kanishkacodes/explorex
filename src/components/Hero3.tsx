@@ -31,7 +31,7 @@ function Hero3() {
           transition={{ duration: 0.5, delay: 0.25 }}
           className="font-bold md:text-5xl text-3xl text-black"
         >
-         As trend-setters in UX UI, technology, and business solutions, we partner with clients to simplify, strengthen, and transform their businesses.
+         As trend-setters in UI/UX, technology, and business solutions, we partner with clients to simplify, strengthen, and transform their businesses.
         </motion.h1>
       </div>
 
