@@ -9,10 +9,10 @@ function Cardc() {
 
         <div className=' h-screen  bg-purple-500 hover:bg-purple-800'>
           <div className=' h-2/5 flex flex-col px-4 justify-center items-center'>
-          <h1 className="font-bold md:text-5xl text-3xl flex justify-center items-center md:mb-10 mb-9 text-white">Menu Design</h1>
-          <p className="md:text-2xl text-xl tracking-wide font-medium flex justify-center items-center md:mb-10 mb-9 text-white text-center ">Enhancing the dining experience by clearly presenting options</p>
+          <h1 className="font-bold  text-4xl flex justify-center items-center md:mb-10 mb-9 text-white">Branding</h1>
+          <p className=" text-xl tracking-wide font-medium flex justify-center items-center md:mb-10 mb-9 text-white text-center ">Enhancing the dining experience by clearly presenting the values</p>
           
-          <div className="md:text-2xl text-xl tracking-wide font-medium flex justify-center items-center space-x-2  text-white">
+          <div className=" text-xl tracking-wide font-medium flex justify-center items-center space-x-2  text-white">
             <p>Feedbacks</p>
             <div className="rounded-full w-1 h-1 bg-white"></div>
             <p>Design</p>
