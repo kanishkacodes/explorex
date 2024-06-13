@@ -17,7 +17,7 @@ function Carda() {
             <div className="rounded-full w-1 h-1 bg-white"></div>
             <p>Web</p>
             <div className="rounded-full w-1 h-1 bg-white"></div>
-            <p>Strategies</p>
+            <p>Responsive</p>
           </div>
 
           
