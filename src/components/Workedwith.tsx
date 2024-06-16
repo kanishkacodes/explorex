@@ -29,8 +29,8 @@ const Workedwith: React.FC = () => {
   ];
 
   return (
-    <div className=" mt-7 ml-5 mr-5 md:ml-72 md:mr-72 mb-20">
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-x-5 gap-y-0 justify-items-center">
+    <div className="mt-7 ml-5 mr-5 xl:ml-72 2xl:ml-72 xl:mr-72 2xl:mr-72 mb-20">
+      <div className="grid grid-cols-3 xl:grid-cols-6 2xl:grid-cols-6 gap-x-5 gap-y-0 justify-items-center">
         {images.map((src, index) => (
           <motion.div
             key={index}
@@ -39,7 +39,7 @@ const Workedwith: React.FC = () => {
             animate={controls}
             variants={imageVariants}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="w-40  md:w-80  mb-5"
+            className="w-40 xl:w-80 2xl:w-80 mb-5"
           >
             <Image src={src} alt={`Logo ${index + 1}`} width={1800} height={400} />
           </motion.div>

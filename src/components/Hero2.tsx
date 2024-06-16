@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import LottieAnimation from "@/components/LottieAnimation";
@@ -20,14 +20,14 @@ function Hero2() {
   }, [controls, inView]);
 
   return (
-    <div className="ml-5 mr-5 md:mt-80 md:ml-72 md:mr-72">
+    <div className="ml-5 mr-5 xl:mt-80 2xl:mt-80 xl:ml-72 2xl:ml-72 xl:mr-72 2xl:mr-72">
       <div className="mt-10">
         <motion.h1
           initial="hidden"
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="font-bold md:text-5xl text-3xl text-black"
+          className="font-bold xl:text-5xl 2xl:text-5xl text-3xl text-black"
         >
           We are a unique creative agency that combines design expertise with technology, data and intelligence.
         </motion.h1>
@@ -40,7 +40,7 @@ function Hero2() {
             animate={controls}
             variants={textVariants}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="w-full md:w-1/2"
+            className="w-full xl:w-3/5 2xl:w-3/5"
           >
             <LottieAnimation animationPath="/Assets/Animation.json" />
           </motion.div>
