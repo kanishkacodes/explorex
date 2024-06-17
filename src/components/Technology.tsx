@@ -1,4 +1,3 @@
-// Technology.tsx
 "use client";
 import React, { useEffect, Suspense } from "react";
 import { motion, useAnimation } from "framer-motion";
@@ -26,15 +25,15 @@ function Technology() {
   }, [controls, inView]);
 
   return (
-    <div className="ml-3 2xl:ml-0">
-      <div className="2xl:flex justify-center mt-20 2xl:mt-28">
+    <div className="ml-3 md:ml-0">
+      <div className="md:flex justify-center mt-20 md:mt-28">
         <div className="flex justify-center" ref={ref}>
           <motion.main
             initial="hidden"
             animate={controls}
             variants={textVariants}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="2xl:w-16 2xl:h-16 w-12 h-12 rounded-full bg-blue-500 flex justify-end"
+            className="md:w-16 md:h-16 w-12 h-12 rounded-full bg-blue-500 flex justify-end"
           ></motion.main>
 
           <div>
@@ -43,7 +42,7 @@ function Technology() {
               animate={controls}
               variants={textVariants}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="ml-10 font-bold text-5xl 2xl:text-7xl text-black"
+              className="ml-10 font-bold text-5xl md:text-7xl text-black"
             >
               Technology
             </motion.h1>
@@ -55,7 +54,7 @@ function Technology() {
                   animate={controls}
                   variants={textVariants}
                   transition={{ duration: 0.4, delay: delays[index] }}
-                  className="mt-5 mb-5 2xl:text-2xl text-xl tracking-wide text-black font-medium"
+                  className="mt-5 mb-5 md:text-2xl text-xl tracking-wide text-black font-medium"
                 >
                   {text}
                 </motion.p>
@@ -69,7 +68,6 @@ function Technology() {
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.4, delay: 0.3 }}
-          className="flex justify-center"
         >
           <Suspense fallback={<div>Loading animation...</div>}>
             <LottieAnimation animationPath="/Assets/Coding.json" />
