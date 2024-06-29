@@ -31,7 +31,7 @@ export default function Home() {
       <Technology />
       <Business /> */}
       <Hero3 />
-      <Star />
+      {/* <Star /> */}
      
       <Cardmain />
      

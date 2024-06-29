@@ -27,7 +27,7 @@ function Hero3() {
           animate={controls}
           variants={textVariants}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="font-bold xl:text-5xl 2xl:text-5xl text-3xl text-black"
+          className="font-bold xl:text-5xl 2xl:text-5xl text-3xl text-black mb-10"
         >
           As trend-setters in UI/UX, technology, and business solutions, we partner with clients to simplify, strengthen, and transform their businesses.
         </motion.h1>

@@ -7,7 +7,7 @@ function Carda() {
     <div>
       <div className=''>
 
-        <div className=' h-screen bg-red-500 hover:bg-red-800'>
+        <div className=' h-screen hover:bg-[rgb(244,51,17)] bg-[#F44611]'>
           <div className=' h-2/5 flex flex-col px-4 justify-center items-center '>
           <h1 className="font-bold  text-4xl flex justify-center items-center md:mb-10 mb-9  text-white">Website Design</h1>
           <p className=" text-xl tracking-wide font-medium flex justify-center items-center md:mb-10 mb-9 text-white text-center">Effective websites to enhance your business, and drive overall growth</p>
