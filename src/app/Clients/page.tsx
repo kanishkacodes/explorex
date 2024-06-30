@@ -21,6 +21,8 @@ const Workedwith: React.FC = () => {
     }
   }, [controls, inView]);
 
+  //tmc.png
+
   const images = [
     '/client/explorex.png',
     '/client/sathyas.png',
@@ -29,6 +31,7 @@ const Workedwith: React.FC = () => {
     '/client/uptown.png',
     '/client/TBC.png',
     '/client/gourmet.png',
+    '/client/tmc.png',
   ];
 
   const textVariants = {
